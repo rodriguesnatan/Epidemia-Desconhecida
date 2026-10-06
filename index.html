@@ -1,0 +1,193 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epidemia Desconhecida</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<div class="container">
+
+    <!-- ================= INÍCIO ================= -->
+
+    <section id="telaInicial" class="tela-inicial">
+
+        <div class="icone-inicial">
+            🦠
+        </div>
+
+        <h1>
+            Epidemia Desconhecida
+        </h1>
+
+        <h2>
+            Investigar, tratar e prevenir
+        </h2>
+
+        <p>
+            Uma nova doença desconhecida começou a se espalhar
+            pela cidade.
+        </p>
+
+        <p>
+            Você foi escolhido para fazer parte da equipe
+            responsável por investigar a doença, encontrar
+            formas de tratamento e proteger a população.
+        </p>
+
+        <div class="objetivos">
+
+            <div>
+                🔬
+                <strong>Investigar</strong>
+                <span>Descubra o que está causando a doença.</span>
+            </div>
+
+            <div>
+                💊
+                <strong>Tratar</strong>
+                <span>Ajude a encontrar formas seguras de tratamento.</span>
+            </div>
+
+            <div>
+                🛡️
+                <strong>Prevenir</strong>
+                <span>Descubra como reduzir a transmissão.</span>
+            </div>
+
+        </div>
+
+        <button
+            id="botaoIniciar"
+            class="botao-iniciar">
+
+            🧪 Iniciar investigação
+
+        </button>
+
+    </section>
+
+
+    <!-- ================= JOGO ================= -->
+
+    <section id="telaJogo" class="tela-jogo">
+
+        <header>
+
+            <h1>
+                🦠 Epidemia Desconhecida
+            </h1>
+
+            <p>
+                Investigue, trate e ajude a controlar a epidemia
+            </p>
+
+        </header>
+
+
+        <!-- STATUS -->
+
+        <section class="status">
+
+            <div>
+                ❤️ Vidas:
+                <strong id="vidas">3</strong>
+            </div>
+
+            <div>
+                ⭐ Pontos:
+                <strong id="pontos">0</strong>
+            </div>
+
+            <div>
+                🔬 Conhecimento:
+                <strong id="conhecimento">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- CAMINHO -->
+
+        <div
+            id="caminhoAtual"
+            class="caminho">
+
+            Investigação
+
+        </div>
+
+
+        <!-- PROGRESSO -->
+
+        <div class="progresso">
+
+            <div id="barraProgresso"></div>
+
+        </div>
+
+
+        <!-- CARTÃO -->
+
+        <main class="jogo">
+
+            <div class="etapa">
+
+                <span id="numeroEtapa">
+                    Etapa 1 de 12
+                </span>
+
+            </div>
+
+
+            <div
+                class="icone"
+                id="icone">
+
+                🦠
+
+            </div>
+
+
+            <h2 id="titulo"></h2>
+
+
+            <p id="texto"></p>
+
+
+            <div
+                id="opcoes"
+                class="opcoes">
+            </div>
+
+
+            <div
+                id="feedback"
+                class="feedback">
+            </div>
+
+
+            <button
+                id="proximo"
+                class="proximo"
+                onclick="proximaEtapa()">
+
+                Continuar →
+
+            </button>
+
+        </main>
+
+
+        <footer>
+
+            🔬 Jogo educativo — Epidemia Desconhecida
+
+        </footer>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body> </html>

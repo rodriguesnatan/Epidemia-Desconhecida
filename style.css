@@ -1,0 +1,773 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+
+font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+min-height: 100vh;
+
+background:
+    radial-gradient(
+        circle at top,
+        #164e63,
+        #020617
+    );
+
+color: white;
+
+padding: 20px;
+
+
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container {
+
+width: 100%;
+
+max-width: 900px;
+
+margin: auto;
+
+
+}
+
+/* =========================
+TELA INICIAL
+========================= */
+
+.tela-inicial {
+
+min-height: 90vh;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
+
+padding: 30px;
+
+
+}
+
+.tela-inicial h1 {
+
+font-size: 45px;
+
+color: #67e8f9;
+
+margin-bottom: 10px;
+
+
+}
+
+.tela-inicial h2 {
+
+color: white;
+
+font-size: 24px;
+
+margin-bottom: 25px;
+
+
+}
+
+.tela-inicial p {
+
+max-width: 700px;
+
+color: #cbd5e1;
+
+font-size: 18px;
+
+line-height: 1.6;
+
+margin-bottom: 12px;
+
+
+}
+
+/* ÍCONE INICIAL */
+
+.icone-inicial {
+
+width: 150px;
+
+height: 150px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background: #cffafe;
+
+border-radius: 50%;
+
+font-size: 80px;
+
+margin-bottom: 25px;
+
+box-shadow:
+    0 0 40px
+    rgba(34, 211, 238, .3);
+
+
+}
+
+/* OBJETIVOS */
+
+.objetivos {
+
+display: grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap: 15px;
+
+width: 100%;
+
+max-width: 750px;
+
+margin: 30px 0;
+
+
+}
+
+.objetivos div {
+
+background: #0f172a;
+
+border: 1px solid #334155;
+
+border-radius: 15px;
+
+padding: 20px;
+
+font-size: 35px;
+
+
+}
+
+.objetivos strong {
+
+display: block;
+
+color: #67e8f9;
+
+font-size: 18px;
+
+margin: 8px 0;
+
+
+}
+
+.objetivos span {
+
+display: block;
+
+color: #cbd5e1;
+
+font-size: 14px;
+
+line-height: 1.4;
+
+
+}
+
+/* BOTÃO INICIAR */
+
+.botao-iniciar {
+
+border: none;
+
+border-radius: 12px;
+
+padding: 18px 35px;
+
+background:
+    linear-gradient(
+        90deg,
+        #0891b2,
+        #0f766e
+    );
+
+color: white;
+
+font-size: 20px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+transition: .2s;
+
+box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, .3);
+
+
+}
+
+.botao-iniciar:hover {
+
+transform: translateY(-3px);
+
+filter: brightness(1.15);
+
+
+}
+
+/* =========================
+TELA DO JOGO
+========================= */
+
+.tela-jogo {
+
+display: none;
+
+
+}
+
+/* CABEÇALHO */
+
+header {
+
+text-align: center;
+
+margin-bottom: 20px;
+
+
+}
+
+header h1 {
+
+font-size: 38px;
+
+color: #67e8f9;
+
+margin-bottom: 8px;
+
+
+}
+
+header p {
+
+color: #cbd5e1;
+
+font-size: 17px;
+
+
+}
+
+/* =========================
+STATUS
+========================= */
+
+.status {
+
+display: grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap: 10px;
+
+margin-bottom: 12px;
+
+
+}
+
+.status div {
+
+background: #0f172a;
+
+padding: 13px;
+
+border-radius: 10px;
+
+text-align: center;
+
+border: 1px solid #334155;
+
+font-weight: bold;
+
+
+}
+
+.status strong {
+
+color: #67e8f9;
+
+font-size: 20px;
+
+
+}
+
+/* =========================
+CAMINHO
+========================= */
+
+.caminho {
+
+text-align: center;
+
+padding: 9px;
+
+border-radius: 10px;
+
+background: #164e63;
+
+color: #a5f3fc;
+
+font-weight: bold;
+
+margin-bottom: 12px;
+
+
+}
+
+/* =========================
+PROGRESSO
+========================= */
+
+.progresso {
+
+height: 14px;
+
+background: #334155;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+margin-bottom: 20px;
+
+
+}
+
+#barraProgresso {
+
+height: 100%;
+
+width: 0%;
+
+background:
+    linear-gradient(
+        90deg,
+        #06b6d4,
+        #22c55e
+    );
+
+transition: width .5s;
+
+
+}
+
+/* =========================
+JOGO
+========================= */
+
+.jogo {
+
+background: #f8fafc;
+
+color: #0f172a;
+
+border-radius: 20px;
+
+padding: 35px;
+
+box-shadow:
+    0 20px 50px
+    rgba(0, 0, 0, .4);
+
+
+}
+
+/* ETAPA */
+
+.etapa {
+
+text-align: right;
+
+color: #64748b;
+
+font-weight: bold;
+
+margin-bottom: 15px;
+
+
+}
+
+/* ÍCONE */
+
+.icone {
+
+width: 110px;
+
+height: 110px;
+
+margin: auto;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background: #cffafe;
+
+font-size: 55px;
+
+margin-bottom: 20px;
+
+
+}
+
+/* TÍTULO */
+
+.jogo h2 {
+
+text-align: center;
+
+color: #0f766e;
+
+font-size: 28px;
+
+margin-bottom: 18px;
+
+
+}
+
+/* TEXTO */
+
+#texto {
+
+text-align: center;
+
+font-size: 18px;
+
+line-height: 1.6;
+
+margin-bottom: 25px;
+
+
+}
+
+/* =========================
+OPÇÕES
+========================= */
+
+.opcoes {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+
+
+}
+
+.opcao {
+
+width: 100%;
+
+padding: 17px;
+
+border-radius: 12px;
+
+border: 2px solid #cbd5e1;
+
+background: white;
+
+color: #0f172a;
+
+cursor: pointer;
+
+font-size: 16px;
+
+font-weight: bold;
+
+text-align: left;
+
+transition: .2s;
+
+
+}
+
+.opcao:hover {
+
+border-color: #0891b2;
+
+background: #ecfeff;
+
+transform: translateY(-2px);
+
+
+}
+
+.opcao:disabled {
+
+cursor: not-allowed;
+
+opacity: .8;
+
+transform: none;
+
+
+}
+
+/* CERTA */
+
+.opcao.certa {
+
+background: #dcfce7;
+
+border-color: #16a34a;
+
+color: #166534;
+
+
+}
+
+/* ERRADA */
+
+.opcao.errada {
+
+background: #fee2e2;
+
+border-color: #dc2626;
+
+color: #991b1b;
+
+
+}
+
+/* =========================
+FEEDBACK
+========================= */
+
+.feedback {
+
+display: none;
+
+margin-top: 20px;
+
+padding: 17px;
+
+border-radius: 12px;
+
+line-height: 1.5;
+
+font-weight: bold;
+
+
+}
+
+.feedback.positivo {
+
+display: block;
+
+background: #dcfce7;
+
+color: #166534;
+
+border: 1px solid #86efac;
+
+
+}
+
+.feedback.negativo {
+
+display: block;
+
+background: #fee2e2;
+
+color: #991b1b;
+
+border: 1px solid #fca5a5;
+
+
+}
+
+/* =========================
+BOTÃO PRÓXIMO
+========================= */
+
+.proximo {
+
+display: none;
+
+width: 100%;
+
+margin-top: 20px;
+
+padding: 16px;
+
+border: none;
+
+border-radius: 10px;
+
+background:
+    linear-gradient(
+        90deg,
+        #0891b2,
+        #0f766e
+    );
+
+color: white;
+
+font-size: 18px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+
+}
+
+.proximo:hover {
+
+filter: brightness(1.1);
+
+
+}
+
+/* =========================
+FINAL
+========================= */
+
+.final {
+
+text-align: center;
+
+
+}
+
+.final .trofeu {
+
+font-size: 90px;
+
+margin: 20px;
+
+
+}
+
+.final h2 {
+
+color: #16a34a;
+
+
+}
+
+/* DERROTA */
+
+.derrota {
+
+text-align: center;
+
+
+}
+
+.derrota .icone-final {
+
+font-size: 80px;
+
+margin: 20px;
+
+
+}
+
+.derrota h2 {
+
+color: #dc2626;
+
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+
+text-align: center;
+
+color: #94a3b8;
+
+margin-top: 20px;
+
+font-size: 14px;
+
+
+}
+
+/* =========================
+CELULAR
+========================= */
+
+@media(max-width: 600px) {
+
+body {
+
+    padding: 10px;
+}
+
+.tela-inicial h1 {
+
+    font-size: 32px;
+}
+
+.tela-inicial h2 {
+
+    font-size: 20px;
+}
+
+.objetivos {
+
+    grid-template-columns: 1fr;
+}
+
+.status {
+
+    grid-template-columns: 1fr;
+}
+
+.jogo {
+
+    padding: 22px;
+}
+
+.jogo h2 {
+
+    font-size: 23px;
+}
+
+#texto {
+
+    font-size: 16px;
+}
+
+
+}
